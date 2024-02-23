@@ -1,10 +1,10 @@
+<!-- import layout -->
 {% extends "layout.html" %}
 
-{% block title %} 
-{{ post.title }}
-{% endblock %} 
+<!-- title -->
+{% block title %} {{ post.title }} {% endblock %}
 
-
+<!-- content -->
 {% block content %}
 <section>
   <img class="banner" src="{{ post.banner.url }}" alt="{{ post.title }}" />
