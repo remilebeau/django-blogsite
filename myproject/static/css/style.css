@@ -51,3 +51,20 @@ a:hover {
   width: 100%;
   max-width: 800px;
 }
+
+.form-with-validation {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.form-submit {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  background-color: #44b78b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
