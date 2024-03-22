@@ -127,6 +127,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+# CSRF
+
+CSRF_TRUSTED_ORIGINS = ["https://django-blogsite.onrender.com"]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
