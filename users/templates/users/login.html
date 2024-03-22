@@ -12,7 +12,9 @@
   action="{% url 'users:login'%}"
   method="post"
 >
-  {% csrf_token %} {{form}}
+  {% csrf_token %}
+  <!-- form -->
+  {{form}}
   <!-- retrieve next param from url if present -->
   {%if request.GET.next%}
   <input type="hidden" name="next" value="{{request.GET.next}}" />
