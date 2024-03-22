@@ -1,3 +1,6 @@
 timestamp.txt
 .prettierignore
 __pycache__*
+
+media/
+assets/
