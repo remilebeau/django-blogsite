@@ -1,9 +1,10 @@
+<!-- import layout -->
 {% extends "layout.html" %}
 
-{% block title %}
-Posts 
-{% endblock %}
+<!-- title -->
+{% block title %} Posts {% endblock %}
 
+<!-- content -->
 {% block content %}
 <section>
   <h1>Posts</h1>
@@ -11,12 +12,10 @@ Posts
   {% for post in posts %}
   <article>
     <h2>
-      <a href="{% url 'posts:page' slug=post.slug %}">
-      {{ post.title }}
-      </a>
+      <a href="{% url 'posts:page' slug=post.slug %}"> {{ post.title }} </a>
     </h2>
     <p>{{ post.body }}</p>
-    <p>{{ post.date }}</p>
+    <p>{{ post.date }} by {{ post.author }}</p>
   </article>
   {% endfor %}
 </section>
